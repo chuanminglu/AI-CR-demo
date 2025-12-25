@@ -1,5 +1,3 @@
-import os
-
 # ❌ 错误1：硬编码的密钥 (安全隐患)
 API_KEY = "sk-1234567890abcdef1234567890abcdef"
 
