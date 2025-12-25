@@ -1,5 +1,6 @@
 # ❌ 错误1：硬编码的密钥 (安全隐患)
-API_KEY = "sk-1234567890abcdef1234567890abcdef"
+# ✅ 修复：从环境变量中读取 API 密钥，而不是在代码中硬编码
+API_KEY = os.getenv("API_KEY")
 
 def division(a, b):
     # ❌ 错误2：没有检查分母为0 (逻辑漏洞)
