@@ -3,6 +3,15 @@
 API_KEY = os.getenv("API_KEY")
 
 def division(a, b):
+    """Return the result of dividing a by b.
+
+    Args:
+        a: The dividend (numerical value to be divided).
+        b: The divisor (numerical value by which to divide).
+
+    Returns:
+        The quotient resulting from a divided by b.
+    """
     # ❌ 错误2：没有检查分母为0 (逻辑漏洞)
     # ❌ 错误3：打印调试信息而不是使用日志 (规范问题)
     print(f"Doing math: {a} / {b}")
